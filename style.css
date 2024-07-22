@@ -1,0 +1,117 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+  font-family: "Outfit";
+}
+.main-card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 330px;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border-radius: 1.2rem;
+}
+.main-card_header {
+  border-bottom: solid 1px hsl(215, 32%, 27%);
+  padding-bottom: 1rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+.color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsla(178, 100%, 50%, 0.295);
+  border-radius: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.view {
+  position: absolute;
+  top: 41%;
+  right: 41%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img-container:hover .view {
+  opacity: 1;
+  cursor: pointer;
+}
+.img-container:hover .color {
+  opacity: 1;
+  cursor: pointer;
+}
+.img-container:hover .main-card_img {
+  transform: scale(1.2);
+}
+.main-card_img {
+  width: 100%;
+  border-radius: 1.2rem;
+  transition: transform 0.5s;
+}
+
+.main-card_heading {
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+.main-card_heading:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.main-card_des {
+  color: #8bacd9;
+  font-size: 1.6rem;
+  line-height: 2;
+  opacity: 0.8;
+}
+.eth_img {
+  vertical-align: -0.4rem;
+}
+.eth {
+  font-size: 1.5rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 500;
+  margin-left: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+.time {
+  color: #8bacd9;
+  float: right;
+  font-size: 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: solid 1px white;
+  max-width: 3rem;
+  margin-top: 1.5rem;
+}
+.creation {
+  font-size: 1.5rem;
+  color: #8bacd9;
+  margin-left: 1.2rem;
+  vertical-align: 1.1rem;
+}
+.author {
+  color: #fff;
+  font-size: 1.5rem;
+  vertical-align: 1.1rem;
+  margin-left: 0.2rem;
+  transition: all 0.3s;
+}
+.author:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
