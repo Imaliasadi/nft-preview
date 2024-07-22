@@ -4,7 +4,10 @@ html {
 * {
   box-sizing: border-box;
 }
-
+::selection {
+  color: white;
+  background-color: hsl(178, 100%, 19%);
+}
 body {
   background-color: hsl(217, 54%, 11%);
   color: #fff;
@@ -17,6 +20,7 @@ body {
   margin: 0 auto;
   margin-top: 8rem;
   border-radius: 1.2rem;
+  box-shadow: 1rem 1rem 2rem 1rem hsl(216, 100%, 7%);
 }
 .main-card_header {
   border-bottom: solid 1px hsl(215, 32%, 27%);
